@@ -1,0 +1,12 @@
+nome = input("Qual é o seu nome?")
+print("Olá {}! seja bem vindo(a)!".format(nome))
+Dia = input("qual dia você nasceu?")
+Mes = input("qual Mês?")
+Ano = input("qual ano?")
+print(" Você nasceu em:" , Dia , Mes , Ano , "Correto?")
+
+print("Vamos testar sua habilidade com contas e numeros!")
+numeroUm = int(input("primeiro numero"))
+numeroDois = int(input("segundo numero"))
+resultado = (numeroUm + numeroDois)
+print(resultado, "é o resultado?")
