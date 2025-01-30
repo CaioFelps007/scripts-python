@@ -3,15 +3,16 @@ print(' o antecessor desse número é: {}, o número é: {}, e o sucessor é: {}
 
 # Conta
 n2 = int(input("Digite outro número: "))
-print("O seu dobro é: {}, o seu triplo é: {}, e sua raiz quadrada é: {}".format(n2*2,n2*3,n2**(1/2)))
+print("O seu dobro é: {}, o seu triplo é: {}, e sua raiz quadrada é: {:.2f}".format(n2*2,n2*3,n2**(1/2)))
 
 # Média
 nota1 = float(input(' A nota desse aluno foi: '))
 nota2 = float(input('A segunda nota desse aluno foi: '))
-print('A média desse aluno é de: {}'.format((nota1+nota2)/2))
+print('A média desse aluno é de: {:.1f}'.format((nota1+nota2)/2))
 
 #Conversao metros em cm e mm
 Metro = float(input("Informe quantos metros você quer: "))
+conversaoKM = Metro / 1000
 ConversaoCM = Metro * 100
 ConversaoMM = Metro * 1000 
 print('O valor em centimentro é de: {} e em milímetro é de {}'.format(ConversaoCM,ConversaoMM))
@@ -20,7 +21,7 @@ print('O valor em centimentro é de: {} e em milímetro é de {}'.format(Convers
 numero = int(input('Digite um número: '))
 
 for i in range(1, 11):
-    print('{} x {} = {}'.format(numero, i,numero * i))
+    print('{} x {:2} = {}'.format(numero, i,numero * i))
 
 #conversaoDL
 valor = float(input("Digite quantos R$BRL você tem: "))
@@ -42,10 +43,10 @@ print(f'É necessário {litros_tinta} litros de tinta para pintar sua parede!')
 preco = float(input("Digite o preço do produto: "))
 desconto = preco * 0.05
 valorFinal = preco - desconto
-print('o valor do produto com desconto é de: {}'.format(valorFinal))
+print('o valor do produto com desconto é de: {:.2f}'.format(valorFinal))
 
 #Salario
 Salario = float(input('Digite seu salário: '))
 porcentagem = Salario * 0.15
 
-print('O valor do aumento é de: {}'.format(Salario + porcentagem))
+print('O valor do aumento é de: {:.2f}'.format(Salario + porcentagem))
